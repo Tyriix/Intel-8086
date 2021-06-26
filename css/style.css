@@ -138,14 +138,14 @@ img{
     text-shadow: 1px 2px #a1a0a0;
     margin-left: 10px;
 }
-.all_buttons{
+.buttons{
     display: flex;
     width: 300px;
     flex-direction: column;
     margin-right: 28px;
     justify-content: space-around;
 }
-.all_buttons button{
+.buttons button{
     width: 140px;
     height: 40px;
     margin: 5px;
@@ -165,7 +165,7 @@ img{
     border-radius: 3px;
     cursor: pointer;
 }
-.all_buttons button:active{
+.buttons button:active{
     box-shadow: none;
     background: linear-gradient(
         180deg,
@@ -175,7 +175,7 @@ img{
         rgba(242, 242, 241, 1) 100%
     );
 }
-.buttons-row{
+.button-row{
     display: flex;
     flex-direction: row;
     justify-content: center;
