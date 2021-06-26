@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Intel 8086</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-bar">
+        <div class="main-bar-text">Intel 8086</div>
+        <div class="main-bar-icons">
+          <img src="img/minimize.svg" alt="" />
+          <img src="img/maximize.svg" alt="" />
+          <img src="img/close.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="input_registers">
+        <div class="registers">
+          <div class="register_name">
+            <p>AX</p>
+            <p>BX</p>
+            <p>CX</p>
+            <p>DX</p>
+          </div>
+          <div class="register_results">
+            <div id="a-result" class="result">
+              <span id="ah-result">00</span>
+              <span id="al-result">00</span>
+            </div>
+            <div id="b-result" class="result">
+              <span id="bh-result">00</span>
+              <span id="bl-result">00</span>
+            </div>
+            <div id="c-result" class="result">
+              <span id="ch-result">00</span>
+              <span id="cl-result">00</span>
+            </div>
+            <div id="d-result" class="result">
+              <span id="dh-result">00</span>
+              <span id="dl-result">00</span>
+            </div>
+          </div>
+        </div>
+        <div class="half-registers">
+          <div class="h-register">
+            <div class="ah">
+              AH
+              <input type="text" maxlength="2" id="ah" oninput="input(this)"/>
+            </div>
+            <div class="bh">
+              BH
+              <input type="text" maxlength="2" id="bh" oninput="input(this)"/>
+            </div>
+            <div class="ch">
+              CH
+              <input type="text" maxlength="2" id="ch" oninput="input(this)"/>
+            </div>
+            <div class="dh">
+              DH
+              <input type="text" maxlength="2" id="dh" oninput="input(this)"/>
+            </div>
+          </div>
+
+          <div class="l_register">
+            <div class="al">
+              AL
+              <input type="text" maxlength="2" id="al" oninput="input(this)"/>
+            </div>
+            <div class="bl">
+              BL
+              <input type="text" maxlength="2" id="bl" oninput="input(this)"/>
+            </div>
+            <div class="cl">
+              CL
+              <input type="text" maxlength="2" id="cl" oninput="input(this)"/>
+            </div>
+            <div class="dl">
+              DL
+              <input type="text" maxlength="2" id="dl" oninput="input(this)"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="option-button">
+        <div class="choice_space">
+          <div class="choice">
+            <div class="first_register">
+              <p>Pierwszy rejestr</p>
+              <select name="firstReg" id="firstReg" class="firstReg">
+                <option disabled selected value class="first_register" value="empty1" id="empty1">Wybierz opcję</option>
+                <option class="first_register" value="ax1" id="ax1">AX</option>
+                <option class="first_register" value="bx1" id="bx1">BX</option>
+                <option class="first_register" value="cx1" id="cx1">CX</option>
+                <option class="first_register" value="dx1" id="dx1">DX</option>
+              </select>
+            </div>
+            <div class="second_register">
+              <p>Drugi rejestr</p>
+              <select name="secondReg" id="secondReg" class="secondReg">
+                <option disabled selected value class="second_register" value="empty2" id="empty2">Wybierz opcję</option>
+                <option class="second_register" value="ax2" id="ax2">AX</option>
+                <option class="second_register" value="bx2" id="bx2">BX</option>
+                <option class="second_register" value="cx2" id="cx2">CX</option>
+                <option class="second_register" value="dx2" id="dx2">DX</option>
+              </select>
+            </div>
+          </div>
+          </div>
+          <div class="all_buttons">
+              <div class="buttons-row">
+                <div class="button"><button onclick="MOV()">MOV</button></div>
+                <div class="button"><button onclick="XCHG()">XCHG</button></div>
+              </div>
+              <div class="buttons-row">
+                <div class="button"><button onclick="setToRandom()">RANDOM</button></div>
+                <div class="button"><button onclick="setToEmpty()">EMPTY</button></div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
