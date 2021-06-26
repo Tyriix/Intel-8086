@@ -230,8 +230,8 @@ function XCHG()
     {
         document.getElementById('ch-result').textContent = dh;
         document.getElementById('cl-result').textContent = dl;
-        document.getElementById('dh-result').textContent = dh;
-        document.getElementById('dl-result').textContent = dl;
+        document.getElementById('dh-result').textContent = ch;
+        document.getElementById('dl-result').textContent = cl;
     }
     else if(firstReg == 'dx1' && secondReg == 'dx2')
     {
